@@ -1,0 +1,44 @@
+.todo-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid black;
+  cursor: pointer;
+  margin-bottom: 8px;
+  height: 40px;
+  transition: all 300ms ease;
+  animation: fadeIn 400ms ease;
+  padding: 4px 12px;
+}
+
+.todo-list-item:hover {
+  background-color: aliceblue;
+}
+
+.todo-list-item span {
+  width: 100%;
+}
+
+.todo-list-item button {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.todo-list-item_completed {
+  opacity: 0.4;
+  margin-left: 1em;
+}
+
+.todo-list-item_completed span {
+  text-decoration: line-through;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

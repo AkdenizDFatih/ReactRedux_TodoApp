@@ -1,0 +1,27 @@
+.new-todo_form {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  margin: 0 auto 20px auto;
+}
+
+.new-todo_input {
+  border: 1px solid black;
+  width: 100%;
+  outline: none;
+  font-size: inherit;
+  padding: 12px;
+  margin-right: 4px;
+}
+
+.new-todo_button {
+  border: 1px solid black;
+  width: 80px;
+  font-size: inherit;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.new-todo_button:hover {
+  background-color: slategrey;
+}

@@ -1,0 +1,44 @@
+.filter-container {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  gap: 4px;
+}
+
+.filter-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  cursor: pointer;
+  background-color: lightcyan;
+}
+
+.filter-item:hover {
+  background-color: #c8c8c8;
+}
+
+.filter-item input {
+  appearance: none;
+}
+
+.filter-item span {
+  text-transform: uppercase;
+}
+
+.filter-active {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+.filter-item.filter-active:hover {
+  background-color: darkslateblue;
+}
+
+input[type='radio']:checked + label {
+  background-color: red;
+}
